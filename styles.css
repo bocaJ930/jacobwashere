@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #adf0d4;
-    --secondary-color: #1fd8a4;
-    --bg-color: #0d1512;
+    --primary-color: #212529;
+    --secondary-color: #B93A33;
+    --bg-color: #f8f9fa;
 }
 
 * {
@@ -27,7 +27,7 @@ body {
 }
 
 header, main, footer {
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
     width: 100%;
 }
@@ -38,8 +38,9 @@ p {
 
 header {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 14px;
 }
 
@@ -52,6 +53,7 @@ nav {
 
 nav a {
     cursor: pointer;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -73,6 +75,13 @@ section {
     gap: 48px;
 }
 
+.header img {
+    display: flex;
+    justify-content: center;
+    float: left;
+    width: 200px;
+}
+
 .nameContainer{
     gap: 8px;
 }
@@ -85,6 +94,8 @@ section {
 }
 
 .imgContainer {
+    display: flex;
+    align-items: center;
     border-radius: 100%;
     max-width: 114px;
     overflow: hidden;
@@ -123,7 +134,7 @@ section {
     line-height: 1.5em;
 }
 
-.outreach {
+/* .outreach {
     display: flex;
     align-items: center;
     gap: 14px;
@@ -131,7 +142,8 @@ section {
     width: fit-content;
     margin-right: auto;
     text-decoration: none;
-}
+    font-weight: bold;
+} */
 
 .outreach:hover {
     opacity: 0.7;
@@ -149,6 +161,8 @@ section {
 
 .headerText {
     margin-bottom: 24px;
+    font-weight: bold;
+    font-size: larger;
 }
 
 .projectItem {
@@ -190,6 +204,7 @@ section {
     color: var(--primary-color);
     text-decoration: none;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .linkItem:hover {

@@ -4,76 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jacob Healt</title>
+    <link rel="icon" type="image/x-icon" href="/public/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h2>JH</h2>
-        <nav>
-            <a class="darkerText" href="https://www.instagram.com/jacob.waz.here/" target="_blank">Instagram</a>
-            <a class="darkerText" href="https://www.linkedin.com/in/jacob-healt-6b110a256/" target="_blank">LinkedIn</a>
-            <a class="darkerText" href="https://www.youtube.com/@jacobwazhere" target="_blank">YouTube</a>
+    <header class="header">
+        <a href="index.html"><img src="/public/logo.webp" alt="logo"></a>
+        <nav class="headerLinks">
+            <div>
+                <i class="fa-brands fa-instagram"></i>
+                <a class="darkerText" href="https://www.instagram.com/jacob.waz.here/" target="_blank">Instagram</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-linkedin"></i>
+                <a class="darkerText" href="https://www.linkedin.com/in/jacob-healt-6b110a256/" target="_blank">LinkedIn</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-youtube"></i>
+                <a class="darkerText" href="https://www.youtube.com/@jacobwazhere" target="_blank">YouTube</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-paper-plane"></i>
+                <a class="darkerText" href="mailto:jhealt@ithaca.edu" target="_blank">Email</a>
+            </div>
         </nav>
     </header>
     <main>
+        <!-- Name, Stats, and Intro Section -->
         <section>
         <div class="nameContainer">
-        <h1>Jacob Healt</h1>
+        <h1>Hi, I'm Jacob Healt.</h1>
         <p class="darkerText">I take pictures, make movies, and design cool things!</p>
         </div>
         <div class="statsContainer">
             <div class="imgContainer">
-                <img src="https://media.licdn.com/dms/image/v2/D5603AQFwpFwB8kZ-rA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1707296090632?e=2147483647&v=beta&t=3DuAMOTwdbCgsHG5nfN-agR8Wsd12kH-ZP8fofqQbvk" alt="profile-image">
+                <img src="/public/profile.webp" alt="profile-image">
             </div>
             <div class="stats darkerText">
                 <div class="linkContainer">
                     <div>    
-                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-camera"></i>
                     </div>
-                    <p class="">1 GitHub Repository</p>
+                    <p>120+ Photos Taken</p>
+                </div>
+                <div>
+                    <div>    
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                    <p>7+ Films Worked On</p>
                 </div>
                 <div>
                     <div>    
                         <i class="fa-brands fa-github"></i>
                     </div>
-                    <p class="">0 Followers</p>
-                </div>
-                <div>
-                    <div>    
-                        <i class="fa-solid fa-arrow-trend-up"></i>
-                    </div>
-                    <p class="">0 Commits This Year</p>
+                    <p>1 GitHub Repository</p>
                 </div>
             </div>
         </div>
-        <p class="aboutMe">Hi, I'm Jacob Healt, a photographer, 
-            videographer, and designer who
-            loves making cool things visually. My artistic works tend 
-            to be about my life. I always try to use my power as a 
-            photographer and artist to tell the story of a person, 
-            place, or object. Much of the art I have experienced 
-            has influenced how I take my photos. Whether from works 
-            seen at my hometown fair to music from artists like 
-            The Goo Goo Dolls, Taylor Swift, and Beyonce. My photography 
-            style may be considered tableau, but I don't want to 
-            confine myself to that genre. I take photos of my interests, 
-            capture people who are important to me, and just things that 
-            I think are visually pleasing. I like my art to have a 
-            particular look that feels nostalgic to me, whether in its 
-            lighting, composition, or both. These are the things that are 
-            important to me in all of my art, not just photography.</p>
-        <div>
+        <p class="aboutMe">
+            I'm a photographer, videographer, and designer (and I guess programmer now, too!) who loves making visually cool things. Many of my artistic works tend to be about my life. I always try to use my power as an artist to tell the story of a person, place, or object. Much of the art I have experienced has influenced how I create things, such as the art seen at my hometown fair and music from inspirational musical talents like The Goo Goo Dolls, Taylor Swift, and Beyonce. In the case of photography, I take photos of things that I think are visually pleasing, that I find interesting, and of people who are important to me. I like all of my art to have a particular look that feels nostalgic, whether in its lighting, composition, or both.
+        </p>
+        <!-- commented out email section, added to nav. -->
+        <!-- <div>
             <a href="mailto:jhealt@ithaca.edu" class="outreach darkerText">
                 <i class="fa-solid fa-arrow-right"></i>
                 <p>Email me!</p>
             </a>
-        </div>
+        </div> -->
         </section>
+       
+        <!-- Latest Projects Section -->
         <section class="projectContainer">
             <p class="darkerText headerText">Latest Projects</p>
             <div class="projectItem">
@@ -84,19 +88,15 @@
                     and was surprised by how many photos I had chosen not to put in
                     any of my series. So, I have decided to share some of my favorite
                     portraits!</p>
-                    <div class="linkContainer">
+                    <!-- commenting out links until done -->
+                    <!-- <div class="linkContainer">
                         <a target="_blank" href="" class="linkItem">
                             <div>    
-                                <i class="fa-brands fa-github"></i>
+                                <i class="fa-solid fa-camera"></i>
                             </div>
-                            <p class="">GitHub</p>
+                            <p class="">View the Photos</p>
                         </a>
-                        <a target="_blank" href="" class="linkItem">
-                            <div>    
-                                <i class="fa-solid fa-bolt"></i>                            </div>
-                            <p class="">Live</p>
-                        </a>
-                    </div>
+                    </div> -->
                 </div>
                 <div>
                     <img src="/public/ftv-the-portraits/ThePortrait_2.jpg" alt="from the vault: the portraits">
@@ -113,19 +113,15 @@
                     of being chilled in some way. My class loved these
                     photographs, and I'm very proud of them!
                     </p>
-                    <div class="linkContainer">
+                    <!-- commenting out links until done -->
+                    <!-- <div class="linkContainer">
                         <a target="_blank" href="" class="linkItem">
                             <div>    
-                                <i class="fa-brands fa-github"></i>
+                                <i class="fa-solid fa-camera"></i>
                             </div>
-                            <p class="">GitHub</p>
+                            <p class="">View the Photos</p>
                         </a>
-                        <a target="_blank" href="" class="linkItem">
-                            <div>    
-                                <i class="fa-solid fa-bolt"></i>                            </div>
-                            <p class="">Live</p>
-                        </a>
-                    </div>
+                    </div> -->
                 </div>
                 <div>
                     <img src="/public/cold/Cold_3.jpg" alt="cold">
@@ -138,22 +134,44 @@
                     <p>While home for Thanksgiving, I took these photos as the
                     sun went down. The quality of the light was stunning,
                     and I think these photos look great!</p>
-                    <div class="linkContainer">
+                    <!-- commenting out links until done -->
+                    <!-- <div class="linkContainer">
                         <a target="_blank" href="" class="linkItem">
                             <div>    
-                                <i class="fa-brands fa-github"></i>
+                                <i class="fa-solid fa-camera"></i>
                             </div>
-                            <p class="">GitHub</p>
+                            <p class="">View the Photos</p>
                         </a>
-                        <a target="_blank" href="" class="linkItem">
+                    </div> -->
+                </div>
+                <div>
+                    <img src="/public/hour-of-light/Hour-Of-Light_1.jpg" alt="hour of light">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Ongoing Projects Section -->
+        <section class="projectContainer">
+            <p class="darkerText headerText">Ongoing Projects</p>
+            <div class="projectItem">
+                <div>
+                    <h3>West Leyden Reformed Church</h3>
+                    <p>
+                        I created and maintain the website for the West Leyden Refomred Church in the town of West Leyden, NY. It has just recently been complately overhauled, improving overall efficiency and increasing web traffic!
+                    </p>
+                    <div class="linkContainer">
+                        <a target="_blank" href="https://ourwlrc.org" class="linkItem">
                             <div>    
-                                <i class="fa-solid fa-bolt"></i>                            </div>
-                            <p class="">Live</p>
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <p class="">View the Website</p>
                         </a>
                     </div>
                 </div>
                 <div>
-                    <img src="/public/hour-of-light/Hour-Of-Light_1.jpg" alt="hour of light">
+                    <a target="_blank" href="https://ourwlrc.org">
+                        <img src="/public/ongoing-projects/wlrc-logo.webp" alt="from the vault: the portraits">
+                    </a>
                 </div>
             </div>
         </section>
