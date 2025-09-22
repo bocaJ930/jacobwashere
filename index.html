@@ -2,179 +2,232 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jacob Healt</title>
-    <link rel="icon" type="image/x-icon" href="/public/favicon.ico">
+    <title>Jacob Was Here</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 15px;
+            padding: 0;
+            background-color: white;
+            font-family: 'Open Sans'; 
+            align-items: center;           
+        }
+        /* nav bar logo control */
+        .logo {
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+        }
+        .hover-video {
+            opacity: 1;
+            transition: opacity 0.25s ease, transform 0.3s ease;
+        }
+        .video-container.fade-out .hover-video {
+            opacity: 0;
+        }
+        /* navbar control (it's in lists because idk how else to do it yet) */
+        .navBar ul {
+            list-style: none;
+            padding: 0%;
+            margin: 0%;
+            text-align: center;
+            list-style: none;
+            white-space: normal;
+        }
+        .navBar li {
+            display: inline-block;
+        }
+        .divider a {
+            pointer-events: none;
+        }
+        .navBar a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 5px 25px;
+            font-size: 15px;
+            text-transform: uppercase;
+            text-align: center;
+            white-space: normal;
+            color: #adb5bd;
+        }
+        .navBar a:hover {
+            color: #495057;
+            transition: 500ms;
+            cursor: pointer;
+        }
+        /* about page controls*/
+        .about {
+            display: flex;
+            width: 98%;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 1%;
+        }
+        .about-info {
+            color: #495057;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            vertical-align: center;
+            justify-content: baseline;
+            text-align: justify;
+            padding: 1%;
+            margin: auto;
+        }
+        .about-info text {
+            display: flex;
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+        }
+        .about-social {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+        .about-social a {
+            color: #adb5bd;
+            padding: 20px;
+        }
+        .about-social a:hover {
+            color: #495057;
+            transition: 500ms;
+            cursor: pointer;
+        }
+        .about-photo {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            width: 75%;
+        }
+        .about-photo img {
+            display: flex;
+            width: 50%;
+            align-content: center;
+            justify-content: center;
+            margin: auto;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/9ca71400f3.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header class="header">
-        <a href="index.html"><img src="/public/logo.webp" alt="logo"></a>
-        <nav class="headerLinks">
-            <div>
-                <i class="fa-brands fa-instagram"></i>
-                <a class="darkerText" href="https://www.instagram.com/jacob.waz.here/" target="_blank">Instagram</a>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <video
+                        preload="metadata"
+                        muted
+                        playsinline
+                        class="hover-video"
+                        src="/public/logo-animated.mov"
+                        autplay
+                        loop
+                        width="200px"
+                        poster="/public/logo-animated-poster.jpg">
+                    </video>
+                </a>
             </div>
-            <div>
-                <i class="fa-brands fa-linkedin"></i>
-                <a class="darkerText" href="https://www.linkedin.com/in/jacob-healt-6b110a256/" target="_blank">LinkedIn</a>
+            <div class="navBar" class="video-container">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li class="divider"><a>|</a></li>
+                    <li><a href="#photography">Photography</a></li>
+                    <li><a href="#videography">Videography</a></li>
+                    <li><a href="#websites">Websites</a></li>
+                </ul>
             </div>
-            <div>
-                <i class="fa-brands fa-youtube"></i>
-                <a class="darkerText" href="https://www.youtube.com/@jacobwazhere" target="_blank">YouTube</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-paper-plane"></i>
-                <a class="darkerText" href="mailto:jhealt@ithaca.edu" target="_blank">Email</a>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <!-- Name, Stats, and Intro Section -->
-        <section>
-        <div class="nameContainer">
-        <h1>Hi, I'm Jacob Healt.</h1>
-        <p class="darkerText">I take pictures, make movies, and design cool things!</p>
-        </div>
-        <div class="statsContainer">
-            <div class="imgContainer">
-                <img src="/public/profile.webp" alt="profile-image">
-            </div>
-            <div class="stats darkerText">
-                <div class="linkContainer">
-                    <div>    
-                        <i class="fa-solid fa-camera"></i>
+        </header>
+        <main>
+            <!--About Section-->
+            <div class="about" id="about">
+                <div class="about-info">
+                    <div class="about-text">
+                        <p>
+                            <b>My name is Jacob Healt.</b>&nbsp;I am a photographer, videographer, and designer
+                            (and I guess programmer now, too!)
+                            from Boonville, NY. I am currently enrolled at Ithaca College for a Bachelor of 
+                            Fine Arts in Film, Photography, and Visual Arts.
+                        </p>
+                        <p>
+                            My artistic works tend to be about my life. I always try to use my power as a 
+                            photographer and artist to tell the story of a person, place, or object. Much of the art 
+                            I have experienced has influenced how I take my photos. Whether from works seen at my 
+                            hometown fair to music from artists like The Goo Goo Dolls, Taylor Swift, and Beyonce. 
+                            My photography style may be considered tableau, but I don't want to confine myself to 
+                            that genre. I take photos of my interests, capture people who are important to me, and 
+                            just things that I think are visually pleasing. I like my art to have a particular look 
+                            that feels nostalgic to me, whether in its lighting, composition, or both. These are the 
+                            things that are important to me in all of my art, not just photography.
+                        </p>
                     </div>
-                    <p>120+ Photos Taken</p>
-                </div>
-                <div>
-                    <div>    
-                        <i class="fa-solid fa-video"></i>
+                    <div class="about-social">
+                        <a href="https://www.instagram.com/jacob.waz.here/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jacob-healt-6b110a256/" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@jacobwazhere" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="mailto:jhealt@ithaca.edu" target="_blank">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
                     </div>
-                    <p>7+ Films Worked On</p>
                 </div>
-                <div>
-                    <div>    
-                        <i class="fa-brands fa-github"></i>
+                <div class="about-photo">
+                    <div>
+                        <img src="/public/profile.webp" alt="Studio Portrait of Jacob Healt">
                     </div>
-                    <p>1 GitHub Repository</p>
                 </div>
             </div>
-        </div>
-        <p class="aboutMe">
-            I'm a photographer, videographer, and designer (and I guess programmer now, too!) who loves making visually cool things. Many of my artistic works tend to be about my life. I always try to use my power as an artist to tell the story of a person, place, or object. Much of the art I have experienced has influenced how I create things, such as the art seen at my hometown fair and music from inspirational musical talents like The Goo Goo Dolls, Taylor Swift, and Beyonce. In the case of photography, I take photos of things that I think are visually pleasing, that I find interesting, and of people who are important to me. I like all of my art to have a particular look that feels nostalgic, whether in its lighting, composition, or both.
-        </p>
-        <!-- commented out email section, added to nav. -->
-        <!-- <div>
-            <a href="mailto:jhealt@ithaca.edu" class="outreach darkerText">
-                <i class="fa-solid fa-arrow-right"></i>
-                <p>Email me!</p>
-            </a>
-        </div> -->
-        </section>
-       
-        <!-- Latest Projects Section -->
-        <section class="projectContainer">
-            <p class="darkerText headerText">Latest Projects</p>
-            <div class="projectItem">
-                <div>
-                    <p class="darkerText">Feb. 8, 2024</p>
-                    <h3>From The Vault: The Portraits</h3>
-                    <p>I was recently going through photos I had taken,
-                    and was surprised by how many photos I had chosen not to put in
-                    any of my series. So, I have decided to share some of my favorite
-                    portraits!</p>
-                    <!-- commenting out links until done -->
-                    <!-- <div class="linkContainer">
-                        <a target="_blank" href="" class="linkItem">
-                            <div>    
-                                <i class="fa-solid fa-camera"></i>
-                            </div>
-                            <p class="">View the Photos</p>
-                        </a>
-                    </div> -->
-                </div>
-                <div>
-                    <img src="/public/ftv-the-portraits/ThePortrait_2.jpg" alt="from the vault: the portraits">
-                </div>
-            </div>
-            <div class="projectItem">
-                <div>
-                    <p class="darkerText">Dec. 12, 2023</p>
-                    <h3>Cold</h3>
-                    <p>This series of photographs comes from my
-                    final project, "Tableau," for Intermediate Photography.
-                    I decided to call this collection "Cold" because
-                    every one of these images represents the feeling
-                    of being chilled in some way. My class loved these
-                    photographs, and I'm very proud of them!
-                    </p>
-                    <!-- commenting out links until done -->
-                    <!-- <div class="linkContainer">
-                        <a target="_blank" href="" class="linkItem">
-                            <div>    
-                                <i class="fa-solid fa-camera"></i>
-                            </div>
-                            <p class="">View the Photos</p>
-                        </a>
-                    </div> -->
-                </div>
-                <div>
-                    <img src="/public/cold/Cold_3.jpg" alt="cold">
-                </div>
-            </div>
-            <div class="projectItem">
-                <div>
-                    <p class="darkerText">Dec. 1, 2023</p>
-                    <h3>Hour of Light</h3>
-                    <p>While home for Thanksgiving, I took these photos as the
-                    sun went down. The quality of the light was stunning,
-                    and I think these photos look great!</p>
-                    <!-- commenting out links until done -->
-                    <!-- <div class="linkContainer">
-                        <a target="_blank" href="" class="linkItem">
-                            <div>    
-                                <i class="fa-solid fa-camera"></i>
-                            </div>
-                            <p class="">View the Photos</p>
-                        </a>
-                    </div> -->
-                </div>
-                <div>
-                    <img src="/public/hour-of-light/Hour-Of-Light_1.jpg" alt="hour of light">
-                </div>
-            </div>
-        </section>
+        </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
-        <!-- Ongoing Projects Section -->
-        <section class="projectContainer">
-            <p class="darkerText headerText">Ongoing Projects</p>
-            <div class="projectItem">
-                <div>
-                    <h3>West Leyden Reformed Church</h3>
-                    <p>
-                        I created and maintain the website for the West Leyden Refomred Church in the town of West Leyden, NY. It has just recently been complately overhauled, improving overall efficiency and increasing web traffic!
-                    </p>
-                    <div class="linkContainer">
-                        <a target="_blank" href="https://ourwlrc.org" class="linkItem">
-                            <div>    
-                                <i class="fa-solid fa-globe"></i>
-                            </div>
-                            <p class="">View the Website</p>
-                        </a>
-                    </div>
-                </div>
-                <div>
-                    <a target="_blank" href="https://ourwlrc.org">
-                        <img src="/public/ongoing-projects/wlrc-logo.webp" alt="from the vault: the portraits">
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-</body>
+        <footer>
+        </footer>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const video = document.querySelector(".hover-video");
+  
+                video.addEventListener("mouseenter", () => {
+                    video.play().catch(err => console.error("Play error:", err));
+                });
+  
+            video.addEventListener("mouseleave", () => {
+                video.pause();
+      
+                // Add fade-out class
+                video.parentElement.classList.add("fade-out");
+      
+                video.addEventListener("pause", function handlePause() {
+                    video.currentTime = 0; 
+                    video.parentElement.classList.remove("fade-out");
+                
+                    // Remove this listener so it doesn't run multiple times
+                    video.removeEventListener("pause", handlePause);
+                });
+                });
+            });
+        </script>
+    </body>
 </html>
