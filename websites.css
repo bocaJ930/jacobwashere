@@ -1,0 +1,152 @@
+body {
+    margin: 0px;
+    padding: 0;
+    background-color: white;
+    font-family: 'Open Sans'; 
+    align-items: center;
+    color: #495057;
+}
+
+/* nav bar logo control */
+.logo {
+    display: flex;
+    justify-content: center;
+}
+/* navbar control (it's in lists because idk how else to do it yet) */
+.navBar ul {
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+    list-style: none;
+    white-space: normal;
+}
+.navBar li {
+    display: inline-block;
+}
+.divider a {
+    pointer-events: none;
+}
+.navBar a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 25px;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: normal;
+    color: #adb5bd;
+}
+.navBar a:hover {
+    color: #495057;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+/* text img controls */
+img:not(.logo img) {
+    width: 100%;
+}
+.text-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-top: 75px;
+    padding-bottom: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    text-align: center;
+}
+.text-photo img {
+    max-width: 60vh;
+}
+.biggorl {
+    font-size: 3.25vw;
+}
+.ourwlrc-bkg {
+    background-image: url(/public/websites/ourwlrc-bkg.jpg);
+}
+.jacobwashere-bkg {
+    background-image: url(/public/websites/jacobwashere-bkg.jpg);
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    max-width: 60vw;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.text div {
+    padding: 20px;
+}
+.text a {
+    color: #adb5bd;
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    align-self: center;
+}
+.text a:hover {
+    color: #495057;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.gallery {
+    display: flex;
+    gap: 15px;
+    max-width: 60vw;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.column-1087 {
+    flex: 1.087;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.column-1068 {
+    flex: 1.068;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.column-25 {
+    flex: 1.25;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+/* footer socials control */
+.social {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.social a {
+    color: #adb5bd;
+    padding: 20px;
+}
+ .social a:hover {
+    color: #495057;
+    transition: 500ms;
+    cursor: pointer;
+}
+footer {
+    padding-bottom: 20px;
+}

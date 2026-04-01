@@ -1,0 +1,91 @@
+body {
+    margin: 0px;
+    padding: 0;
+    background-color: white;
+    font-family: 'Open Sans'; 
+    align-items: center;
+    color: #495057;           
+}
+
+/* nav bar logo control */
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+/* navbar control (it's in lists because idk how else to do it yet) */
+.navBar ul {
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+    list-style: none;
+    white-space: normal;
+}
+.navBar li {
+    display: inline-block;
+}
+.divider a {
+    pointer-events: none;
+}
+.navBar a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 25px;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: normal;
+    color: #adb5bd;
+}
+.navBar a:hover {
+    color: #495057;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+/* about page controls*/
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 60vw;
+    margin: 0 auto;
+    gap: 40px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+
+}
+.card img {
+    max-width: 400px;
+    height: auto;
+}
+
+/* footer socials control */
+.social {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.social a {
+    color: #adb5bd;
+    padding: 20px;
+}
+ .social a:hover {
+    color: #495057;
+    transition: 500ms;
+    cursor: pointer;
+}
+footer {
+    padding-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+    .navBar a {
+        padding: 5px 15px;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+}

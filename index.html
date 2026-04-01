@@ -3,231 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <title>Jacob Was Here</title>
+    <link rel="icon" type="image/x-icon" href="/public/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 15px;
-            padding: 0;
-            background-color: white;
-            font-family: 'Open Sans'; 
-            align-items: center;           
-        }
-        /* nav bar logo control */
-        .logo {
-            display: flex;
-            justify-content: center;
-            padding-top: 10px;
-        }
-        .hover-video {
-            opacity: 1;
-            transition: opacity 0.25s ease, transform 0.3s ease;
-        }
-        .video-container.fade-out .hover-video {
-            opacity: 0;
-        }
-        /* navbar control (it's in lists because idk how else to do it yet) */
-        .navBar ul {
-            list-style: none;
-            padding: 0%;
-            margin: 0%;
-            text-align: center;
-            list-style: none;
-            white-space: normal;
-        }
-        .navBar li {
-            display: inline-block;
-        }
-        .divider a {
-            pointer-events: none;
-        }
-        .navBar a {
-            text-decoration: none;
-            display: inline-block;
-            padding: 5px 25px;
-            font-size: 15px;
-            text-transform: uppercase;
-            text-align: center;
-            white-space: normal;
-            color: #adb5bd;
-        }
-        .navBar a:hover {
-            color: #495057;
-            transition: 500ms;
-            cursor: pointer;
-        }
-        /* about page controls*/
-        .about {
-            display: flex;
-            width: 98%;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
-            padding: 1%;
-        }
-        .about-info {
-            color: #495057;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            vertical-align: center;
-            justify-content: baseline;
-            text-align: justify;
-            padding: 1%;
-            margin: auto;
-        }
-        .about-info text {
-            display: flex;
-            width: 50%;
-            justify-content: center;
-            align-items: center;
-        }
-        .about-social {
-            display: flex;
-            align-content: center;
-            justify-content: center;
-        }
-        .about-social a {
-            color: #adb5bd;
-            padding: 20px;
-        }
-        .about-social a:hover {
-            color: #495057;
-            transition: 500ms;
-            cursor: pointer;
-        }
-        .about-photo {
-            display: flex;
-            align-content: center;
-            justify-content: center;
-            width: 75%;
-        }
-        .about-photo img {
-            display: flex;
-            width: 50%;
-            align-content: center;
-            justify-content: center;
-            margin: auto;
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/9ca71400f3.js" crossorigin="anonymous"></script>
+    <script src="link-loader.js"></script>
 </head>
     <body>
         <header>
             <div class="logo">
-                <a href="index.html">
-                    <video
-                        preload="metadata"
-                        muted
-                        playsinline
-                        class="hover-video"
-                        src="/public/logo-animated.mov"
-                        autplay
-                        loop
-                        width="200px"
-                        poster="/public/logo-animated-poster.jpg">
-                    </video>
+                <a data-link="index" href="#">
+                    <img src="/public/logo-animated-poster.jpg" width="200px" alt="JacobWasHere Logo">
                 </a>
             </div>
             <div class="navBar" class="video-container">
                 <ul>
-                    <li><a href="#about">About</a></li>
+                    <li><a data-link="about" href="#">About</a></li>
                     <li class="divider"><a>|</a></li>
-                    <li><a href="#photography">Photography</a></li>
-                    <li><a href="#videography">Videography</a></li>
-                    <li><a href="#websites">Websites</a></li>
+                    <li><a data-link="photography" href="#">Photography</a></li>
+                    <li><a data-link="videography" href="#">Videography</a></li>
+                    <li><a data-link="websites" href="#">Websites</a></li>
                 </ul>
             </div>
         </header>
         <main>
-            <!--About Section-->
-            <div class="about" id="about">
-                <div class="about-info">
-                    <div class="about-text">
-                        <p>
-                            <b>My name is Jacob Healt.</b>&nbsp;I am a photographer, videographer, and designer
-                            (and I guess programmer now, too!)
-                            from Boonville, NY. I am currently enrolled at Ithaca College for a Bachelor of 
-                            Fine Arts in Film, Photography, and Visual Arts.
-                        </p>
-                        <p>
-                            My artistic works tend to be about my life. I always try to use my power as a 
-                            photographer and artist to tell the story of a person, place, or object. Much of the art 
-                            I have experienced has influenced how I take my photos. Whether from works seen at my 
-                            hometown fair to music from artists like The Goo Goo Dolls, Taylor Swift, and Beyonce. 
-                            My photography style may be considered tableau, but I don't want to confine myself to 
-                            that genre. I take photos of my interests, capture people who are important to me, and 
-                            just things that I think are visually pleasing. I like my art to have a particular look 
-                            that feels nostalgic to me, whether in its lighting, composition, or both. These are the 
-                            things that are important to me in all of my art, not just photography.
-                        </p>
-                    </div>
-                    <div class="about-social">
-                        <a href="https://www.instagram.com/jacob.waz.here/" target="_blank">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/jacob-healt-6b110a256/" target="_blank">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@jacobwazhere" target="_blank">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                        <a href="mailto:jhealt@ithaca.edu" target="_blank">
-                            <i class="fa-solid fa-envelope"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="about-photo">
-                    <div>
-                        <img src="/public/profile.webp" alt="Studio Portrait of Jacob Healt">
-                    </div>
-                </div>
+            <!-- photography header -->
+            <div class="text text-photo">
+                <h1>
+                    <span class="biggorl">From The Vault: The Portraits</span>
+                    <br>
+                    (2/8/24)
+                </h1>
+            </div>
+            <!-- photography body -->
+            <div class="card">
+                <p>I was recently going through photos I had taken, and was surprised by how many photos I had chosen not to put in any of my series. So, I have decided to share some of my favorite portraits!</p>
+                <a href="/photography.html">VIEW ALL OF THE PHOTOS</a>
+            </div>
+            <div class="card">
+                <img loading="lazy" src="/public/index/indexPhoto_1.jpg" alt="Portrait of a duck.">
+                <img loading="lazy" src="/public/index/indexPhoto_2.jpg" alt="Portrait of a young lady with a hooded sweatshirt hiding half of her face with praying hands.">
+                <img loading="lazy" src="/public/index/indexPhoto_3.jpg" alt="Portrait of a man holding a fake succulent plant.">
+            </div> 
+            
+            <!-- videography header -->
+            <div class="text text-video">
+                <img loading="lazy" src="/public/write-me-a-letter-when-you-return-home/text.png" alt="Write Me A Letter When You Return Home" width="65%">
+                <h1>(5/12/23)</h1>
+            </div>
+            <!-- videography body -->
+            <div class="card">
+                <h3>Discover the beauty of writing a letter.</h3>
+                <a href="/write-me-a-letter.html">LEARN MORE ABOUT THE FILM</a>
+            </div>
+            <div class="card">
+                <p>75-year-old Enola Niaga finds comfort in writing letters back and forth with her sweetheart.</p>
+            </div>
+            <div class="video">
+                <img loading="lazy" src="/public/write-me-a-letter-when-you-return-home/poster.jpg" alt="Poster for Write Me A Letter When You Return Home">
+                <iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/YCPSCUuIUF8?si=2T9Y7ab3Jm5VtIQ5" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
         <footer>
+            <div class="social">
+                <a data-link="instagram" href="#" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a data-link="linkedin" href="#" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a data-link="youtube" href="#" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a data-link="email" href="#" target="_blank">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
         </footer>
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                const video = document.querySelector(".hover-video");
-  
-                video.addEventListener("mouseenter", () => {
-                    video.play().catch(err => console.error("Play error:", err));
-                });
-  
-            video.addEventListener("mouseleave", () => {
-                video.pause();
-      
-                // Add fade-out class
-                video.parentElement.classList.add("fade-out");
-      
-                video.addEventListener("pause", function handlePause() {
-                    video.currentTime = 0; 
-                    video.parentElement.classList.remove("fade-out");
-                
-                    // Remove this listener so it doesn't run multiple times
-                    video.removeEventListener("pause", handlePause);
-                });
-                });
-            });
-        </script>
     </body>
 </html>

@@ -1,0 +1,114 @@
+body {
+    margin: 0px;
+    padding: 0;
+    background-color: white;
+    font-family: 'Open Sans'; 
+    align-items: center;
+    color: #495057;
+}
+
+/* nav bar logo control */
+.logo {
+    display: flex;
+    justify-content: center;
+}
+/* navbar control (it's in lists because idk how else to do it yet) */
+.navBar ul {
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+    list-style: none;
+    white-space: normal;
+}
+.navBar li {
+    display: inline-block;
+}
+.divider a {
+    pointer-events: none;
+}
+.navBar a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 25px;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: normal;
+    color: #adb5bd;
+}
+.navBar a:hover {
+    color: #495057;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+/* text img controls */
+iframe {
+    width: 60vw;
+    aspect-ratio: 16 / 9;
+    border: 0;
+}
+.text {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-color: #C92A2A;
+}
+.text h1 {
+    color: #ffffff;
+    font-size: 2.5vw;
+}
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 60vw;
+    margin: 0 auto;
+    gap: 40px;
+}
+.content-left {
+    flex: 1;
+    padding-right: 20px;
+}
+.content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    min-height: 150px;
+}
+.content-right a {
+    text-decoration: none;
+    color: #adb5bd;
+}
+.content-right a:hover {
+    color: #495057;
+    transition: 500ms;
+    cursor: pointer;
+}
+.video {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+/* footer socials control */
+.social {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.social a {
+    color: #adb5bd;
+    padding: 20px;
+}
+ .social a:hover {
+    color: #495057;
+    transition: 500ms;
+    cursor: pointer;
+}
+footer {
+    padding-bottom: 20px;
+}

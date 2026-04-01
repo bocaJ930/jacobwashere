@@ -1,0 +1,133 @@
+body {
+    margin: 0px;
+    padding: 0;
+    background-color: white;
+    font-family: 'Open Sans'; 
+    align-items: center;
+    color: #495057;        
+}
+
+/* nav bar logo control */
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+/* navbar control (it's in lists because idk how else to do it yet) */
+.navBar ul {
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+    list-style: none;
+    white-space: normal;
+}
+.navBar li {
+    display: inline-block;
+}
+.divider a {
+    pointer-events: none;
+}
+.navBar a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 25px;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: normal;
+    color: #adb5bd;
+}
+.navBar a:hover {
+    color: #495057;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+/* text img controls */
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-top: 75px;
+    padding-bottom: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    text-align: center;
+}
+.text-photo {
+    background-image: url(/public/ftv-the-portraits/bkg.jpg);
+}
+.text-video {
+    background-image: url(/public/write-me-a-letter-when-you-return-home/bkg.jpg);
+}
+.biggorl {
+    font-size: 3.25vw;
+}
+
+/* body block control */
+iframe {
+    width: 60vw;
+    aspect-ratio: 16 / 9;
+    border: 0;
+}
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 60vw;
+    margin: 0 auto;
+    gap: 40px;
+}
+.card img {
+    max-width: 100%;
+    min-width: 0;
+}
+.card a {
+    text-decoration: none;
+    color: #adb5bd;
+}
+.card a:hover {
+    color: #495057;
+    transition: 500ms;
+    cursor: pointer;
+}
+.card p {
+    margin-bottom: 50px;
+}
+.video {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 60vw;
+    margin: 0 auto;
+    gap: 40px;
+    padding-bottom: 70px;
+}
+.video img {
+    height: 23.5vw;
+}
+
+/* footer socials control */
+.social {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.social a {
+    color: #adb5bd;
+    padding: 20px;
+}
+ .social a:hover {
+    color: #495057;
+    transition: 500ms;
+    cursor: pointer;
+}
+footer {
+    padding-bottom: 20px;
+}

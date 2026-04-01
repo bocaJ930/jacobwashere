@@ -1,0 +1,130 @@
+body {
+    margin: 0px;
+    padding: 0;
+    background-color: white;
+    font-family: 'Open Sans'; 
+    align-items: center;
+    color: #495057;
+}
+
+/* nav bar logo control */
+.logo {
+    display: flex;
+    justify-content: center;
+}
+/* navbar control (it's in lists because idk how else to do it yet) */
+.navBar ul {
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+    list-style: none;
+    white-space: normal;
+}
+.navBar li {
+    display: inline-block;
+}
+.divider a {
+    pointer-events: none;
+}
+.navBar a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 25px;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: normal;
+    color: #adb5bd;
+}
+.navBar a:hover {
+    color: #495057;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+/* text img controls */
+.text {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-image: url(/public/write-me-a-letter-when-you-return-home/bkg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.bio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 50px;
+}
+.poster img {
+    max-width: 250px;
+    height: auto;
+}
+.info {
+    flex: 1;
+    text-align: center;
+    max-width: 50%;
+}
+.pcast {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.cast {
+    display: inline-block;
+    text-align: center;
+}
+.cast a {
+    text-decoration: none;
+    font-style: italic;
+    color: #adb5bd;
+}
+.cast a:hover {
+    color: #495057;
+    transition: 500ms;
+    cursor: pointer;
+}
+.cast iframe {
+    width: 60vw;
+    aspect-ratio: 16 / 9;
+    border: 0;
+}
+.dir-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-image: url(/public/write-me-a-letter-when-you-return-home/dir-bkg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* footer socials control */
+.social {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.social a {
+    color: #adb5bd;
+    padding: 20px;
+}
+ .social a:hover {
+    color: #495057;
+    transition: 500ms;
+    cursor: pointer;
+}
+footer {
+    padding-bottom: 20px;
+}
