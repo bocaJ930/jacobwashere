@@ -4,7 +4,7 @@ body {
     background-color: white;
     font-family: 'Open Sans'; 
     align-items: center;
-    color: #495057;        
+    color: #495057;           
 }
 
 /* nav bar logo control */
@@ -44,38 +44,7 @@ body {
     cursor: pointer;
 }
 
-/* text img controls */
-.text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    padding-top: 75px;
-    padding-bottom: 50px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    color: #ffffff;
-    text-align: center;
-}
-.text-photo {
-    background-image: url(/public/ftv-the-portraits/bkg.jpg);
-}
-.text-video {
-    background-image: url(/public/write-me-a-letter-when-you-return-home/bkg.jpg);
-}
-.biggorl {
-    font-size: 3.25vw;
-}
-
-/* body block control */
-iframe {
-    width: 60vw;
-    aspect-ratio: 16 / 9;
-    border: 0;
-}
+/* about page controls*/
 .card {
     display: flex;
     justify-content: space-between;
@@ -83,34 +52,13 @@ iframe {
     max-width: 60vw;
     margin: 0 auto;
     gap: 40px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+
 }
 .card img {
-    max-width: 100%;
-    min-width: 0;
-}
-.card a {
-    text-decoration: none;
-    color: #adb5bd;
-}
-.card a:hover {
-    color: #495057;
-    transition: 500ms;
-    cursor: pointer;
-}
-.card p {
-    margin-bottom: 50px;
-}
-.video {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 60vw;
-    margin: 0 auto;
-    gap: 40px;
-    padding-bottom: 70px;
-}
-.video img {
-    height: 23.5vw;
+    max-width: 400px;
+    height: auto;
 }
 
 /* footer socials control */
@@ -130,4 +78,14 @@ iframe {
 }
 footer {
     padding-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+    .navBar a {
+        padding: 5px 15px;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
 }
