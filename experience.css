@@ -44,21 +44,91 @@ body {
     cursor: pointer;
 }
 
-/* about page controls*/
-.card {
+.text {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 60vw;
-    margin: 0 auto;
-    gap: 40px;
-    padding-top: 50px;
-    padding-bottom: 25px;
-
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-color: #C92A2A;
 }
-.card img {
-    max-width: 400px;
-    height: auto;
+.text h1 {
+    color: #ffffff;
+    font-size: 2.5vw;
+}
+
+.experience-section {
+    padding: 24px;
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.experience-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.company-logo {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
+}
+
+.company-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.experience-details {
+    flex-grow: 1;
+}
+
+.job-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 2px 0;
+    line-height: 1.4;
+}
+
+.company-name {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 0 4px 0;
+}
+
+.job-dates, 
+.job-location {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 0 2px 0;
+}
+
+.job-description {
+    font-size: 14px;
+    margin: 12px 0 0 0;
+    padding-left: 20px;
+    line-height: 1.5;
+}
+
+.job-description li {
+    margin-bottom: 6px;
+}
+
+.job-description li:last-child {
+    margin-bottom: 0;
 }
 
 /* footer socials control */
