@@ -1,6 +1,6 @@
 {
-    "index": "index.html",
-    "experience": "/experience.html",
+    "index": "/",
+    "about": "/about.html",
     "photography": "/photography.html",
     "videography": "/videography.html",
     "websites": "/websites.html",
