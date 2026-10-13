@@ -1,5 +1,6 @@
 {
-    "index": "index.html",
+<<<<<<<<< Temporary merge branch 1
+    "index": "/",
     "about": "/about.html",
     "photography": "/photography.html",
     "videography": "/videography.html",
